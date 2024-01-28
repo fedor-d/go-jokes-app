@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "8cb820b4-db59-410e-892f-25145e7a3d4e",
+		"name": "go-jokes-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15212301"
+	},
+	"item": [
+		{
+			"name": "main",
+			"item": [
+				{
+					"name": "GET All Jokes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/jokes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"jokes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Joke by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/jokes/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"jokes",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Random Joke",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/v1/jokes/random",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"jokes",
+								"random"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Joke",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"id\": \"1001\",\n\"jokeText\": \"Joke 1001\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/v1/jokes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"v1",
+								"jokes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Health Live",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/health/live",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"health",
+								"live"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Health Ready",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/health/ready",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"health",
+								"ready"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
